@@ -1,23 +1,34 @@
 from datetime import datetime
+from pynput.keyboard import Key, Controller
+
+keyboard = Controller()
 
 last_detection_and_time = {}
-COOLDOWN_TIME = 10
+COOLDOWN_TIME = 1
 
 
 def ok():
     print("OK action needs to be performed")
+    keyboard.press(Key.left)
+    keyboard.release(Key.left)
 
 
 def stop():
     print("Stop action needs to be performed")
+    keyboard.press(Key.right)
+    keyboard.release(Key.right)
 
 
 def thumb_down():
     print("thumbs down action needs to be performed")
+    keyboard.press(Key.down)
+    keyboard.release(Key.down)
 
 
 def thumb_up():
     print("thumbs up needs to be performed")
+    keyboard.press(Key.up)
+    keyboard.release(Key.up)
 
 
 actions = {

@@ -37,3 +37,7 @@ thop  # FLOPs computation
 # albumentations>=1.0.3
 # pycocotools>=2.0  # COCO mAP
 # roboflow
+
+#Snake game
+pygame == 2.1.2
+pynput == 1.7.6

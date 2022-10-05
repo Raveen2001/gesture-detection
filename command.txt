@@ -1,1 +1,8 @@
-python detect.py --weights best.pt --conf 0.8 --source 0
+pip install -r requirements.txt
+
+#For gesture detection.
+python detect.py --weights best.pt --conf 0.5 --source 0
+
+
+#For Game
+python snake.py
